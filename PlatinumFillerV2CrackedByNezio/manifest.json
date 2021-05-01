@@ -1,0 +1,83 @@
+{
+    "name": "PlatinumFiller",
+    "version": "2.0",
+    "description": "Platinum Profit",
+    "browser_action": {
+        "default_popup": "html/auth.html",
+        "default_icon": "images/hypedlogo.png"
+      },
+      "icons": {
+        "128": "images/hypedlogo.png"
+    },
+    "permissions": ["activeTab", "storage", "background", "tabs", "<all_urls>", "clipboardWrite", "clipboardRead"],
+    "manifest_version": 2,
+    "content_scripts": [
+    {
+      "matches": [
+        "https://www.supremenewyork.com/*"
+      ],
+      "js": [
+        "js/supreme.js"
+      ],
+      "all_frames": true
+    },
+    {
+      "matches":[
+         "https://*/*/checkouts/*?previous_step=contact_information&step=shipping_method",
+         "https://*/*/checkouts/*?previous_step=shipping_method&step=payment_method",
+         "https://*/*/checkouts/*?previous_step=contact_information&step=payment_method",
+         "https://*/*/checkouts/*",
+         "https://*/*/*/checkouts/*",
+         "https://*/*/checkouts/*?step=contact_information",
+         "https://*.shopifycs.com/*"
+      ],
+      "all_frames": true,
+      "js":[
+          "js/shopify.js"
+      ]
+   },
+        {
+       "matches": [
+            "https://*/*", "https://js.stripe.com/*", "https://stripe.dev/*", "https://checkout.stripe.com/*", "https://checkout.stripe.com/pay/*"
+          ],
+          "all_frames": true,
+          "js": [
+            "js/stripe.js"
+          ],
+          "exclude_matches": [
+          "https://*/*/checkouts/*",
+          "https://www.hibbett.com/*",
+          "https://*/en/cart/view",
+          "https://www.sotostore.com/en/product/",
+          "https://www.jdsports.com/store/checkout/shipping.jsp?*",
+          "https://www.jdsports.com/store/checkout/billing.jsp?_requestid=*",
+          "https://www.finishline.com/store/checkout/shipping.jsp?*",
+          "https://www.finishline.com/store/checkout/billing.jsp?*",
+          "https://www.supremenewyork.com/checkout",
+          "https://*/*/*/products/*",
+          "https://*/*/products/*",
+          "https://*/products/*"
+  
+          ]
+        },
+        {
+          "matches": [
+            "https://js.stripe.com/*"
+          ],
+          "js": [
+            "js/stripe1.js"
+          ],
+          "all_frames": true
+        },
+        {
+          "matches": [
+            "https://*.stripe.com/*", "https://checkout.stripe.com/pay/*"
+          ],
+          "js": [
+            "js/stripe2.js"
+          ],
+          "all_frames": true
+        }
+        
+      ]
+    }

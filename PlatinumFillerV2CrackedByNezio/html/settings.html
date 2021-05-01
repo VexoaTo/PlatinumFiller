@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Aco/Autofill</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/settings.css">
+
+<meta charset="utf-8">
+</head>
+<body>
+    <div class="taskpages" id="taskpage" style="display: block;">
+    <div class="container main-background">
+        <div class="row">
+            <div class="topbar" style="z-index: 2;">
+                <div class="logo2">
+                    <div class="menubuttons">
+                        <img src="../images/hypedlogo2.png" class="img-fluid" style="margin-top: 15px;margin-left: 15px;margin-bottom: 15px;" width="45" height="45">
+                        <p style="color: white; padding-left: 1px; padding-bottom: 0px; padding-top: 0px;">Licensed to Nezio</p>
+
+                        <div class="navbar4">
+                            <h4 class="info" style="padding-right: 100px;">Settings</h4>
+                        </div>
+                        </div>
+                        <div id="navBar">
+                            <a href="main.html"><img class="navIcons" src="../images/user.png"></a>
+                            <a href="cc.html"><img class="navIcons" src="../images/cc.png"></a>
+                            <a href="settings.html"><img class="navIcons" src="../images/icons8-settings-50.png"></a>
+                        </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar3">
+        <div class="header">
+            <h3 class="autofill">Autofill</h3>
+        </div>
+        <div class="center">
+            <div class="col-50">
+        <div class="check-box-wrapper">
+            <input type="checkbox" class="check-box" name="status-input" id="status-input"/>
+               <label class="check-box-label" for="status-input">
+                 <span class="check-box-name"></span>
+              </label>                              
+           </div>
+           </div>
+           </div>
+        </div>
+   
+           <div class="navbar2">
+           <div class="header">
+            <h4 class="supheader">Supreme</h4>
+        
+        <div class="row">
+            <div class="col-50">
+                    <input type="text" id="supreme-delay" class="timer-amount" placeholder="Delay">
+            </div>
+            <div class="col-50">
+                <div class="check-box-wrapper">
+                    <input type="checkbox" class="check-box" name="supremeaco" id="supremeaco"/>                
+                    <label class="check-box-label" for="supremeaco">
+                        <span class="check-box-name">Process Payment</span>
+                    </label>                              
+                  </div>
+                  </div>
+        </div>
+    </div>
+        <h4>Shopify</h4>
+        <div class="row">
+            <div class="col-50">
+                    <input type="text" id="shopifysteps-delay" class="timer-amount" placeholder="Delay">
+            </div>
+            <div class="col-50">
+                <div class="check-box-wrapper">
+                    <input type="checkbox" class="check-box" name="shopifyaco" id="shopifyaco"/>
+                  
+                    <label class="check-box-label" for="shopifyaco">
+                        <span class="check-box-name">Checkout Steps</span>
+                    </label>                              
+                  </div>
+                  </div>
+        </div>
+        <div class="header">
+            <h4>Stripe</h4>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                    <input type="text" id="stripe-delay" class="timer-amount" placeholder="Delay">
+            </div>
+            <div class="col-50">
+                <div class="check-box-wrapper">
+                    <input type="checkbox" class="check-box" name="stripeaco" id="stripeaco"/>     
+                    <label class="check-box-label" for="stripeaco">
+                        <span class="check-box-name">Submit Payment</span>
+                    </label>                              
+                  </div>
+                  </div>
+        </div>
+    </div>
+</div>
+        <input type="text" id="DiscordWebhookInput" class="input" placeholder="Discord Webhook URL">
+        <button class="saveinfos action-save" id="testWebhook">Test</button>
+        <div class="saveinfo">
+          <button class="saveinfo action-save" id="savesettings">Save</button>
+      </div>
+      <script src="../saves/settings.js"></script>
+</body>
+</html>

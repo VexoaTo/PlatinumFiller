@@ -1,0 +1,55 @@
+html {
+    background: #36393f;
+	border-radius: 30px;
+    width: 345px;
+    height:525px;
+}
+body {
+    width: 350px;
+    height:525px;
+	background: #36393f;
+	overflow-y: scroll;
+}
+* {
+	margin: 0;
+}
+*:focus {
+	outline: 0;
+}
+#plat-logo {
+    margin-top: 175px;
+    margin-left: 133px;
+}
+#login-value {
+    background: #707070;
+    margin-left: 25px;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 25px;
+    border-radius: 5px;
+    border: none;
+	width: 285px;
+}
+::placeholder{
+    color: white;
+}
+#submit{
+    margin-left: 30px;
+	font-size: 15px;
+	background: #837aff;
+	color: white;
+	margin-top: 10px;
+	height: 25px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border: none;
+	border-radius: 5px;
+	width: 280px;
+}
+.login-2 button#submit:active{
+	color: #041421;
+}
+button:hover {
+	color: black;
+}

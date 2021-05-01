@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Aco/Autofill</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/cc.css">
+
+<meta charset="utf-8">
+</head>
+<body>
+    <div class="taskpages" id="taskpage" style="display: block;">
+    <div class="container main-background">
+        <div class="row">
+            <div class="topbar" style="z-index: 2;">
+                <div class="logo2">
+                    <div class="menubuttons">
+                        <img src="../images/hypedlogo2.png" class="img-fluid" style="margin-top: 5px;margin-left: -115px;margin-bottom: 15px;" width="45" height="45">
+                        <p style="color: white; padding-left: 1px; padding-bottom: 0px; padding-top: 0px;">Licensed to Nezio</p>
+
+                        <div class="navbar3">
+                            <h4 class="info">Information</h4>
+                        </div>
+                        </div>
+                        <div class="container">
+                            <div id="navBar">
+                                <a href="main.html"><img class="navIcons" src="../images/user.png"></a>
+                                <a href="cc.html"><img class="navIcons" src="../images/icons8-credit-card-48 (2).png"></a>
+                                <a href="settings.html"><img class="navIcons" src="../images/settings.png"></a>
+                            </div>
+                            </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="header">
+            <h4></h4>
+        </div>
+<div class="navbar2">
+<div class="Card">
+    <div class="cardnum">
+    <input class="cardnumber" id="InputCardNumber" type="text" placeholder="Card Number">
+    
+    </div>
+    <div class="carddetails">
+        <input type="text" class="month" id="InputExpiryMonth" placeholder="Month">
+        <input type="text" class="year" id="InputExpiryYear" placeholder="Year">
+        </div>
+        <div classs="carddetails">
+        <select class="cardtype" id="cardtype">
+            <option value="default" disabled selected>Card Type</option>
+            <option value="credit card">Credit Card (US)</option>
+            <option value="visa">Visa</option>
+            <option value="american_express">American Express</option>
+            <option value="master">Mastercard</option>
+            <option value="solo">Solo</option>
+            <option value="paypal">PayPal</option>
+        </select>
+        <input class="cvv" id="InputCVV" type="text" placeholder="Cvv">
+        </div>
+    </div>
+</div>
+<div class="saveinfo">
+    <button class="saveinfo action-save" id="savebilling" >Save</button>
+</div>
+</div>
+</div>
+</div>
+<script src="../saves/cc.js"></script>
+</body>
+</html>
